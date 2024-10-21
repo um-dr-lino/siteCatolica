@@ -1,0 +1,123 @@
+:root {
+    --main-bg-color: brown;
+    --letras: black;
+    --background: #e0e1dd;
+    --background2: #f3f3f3;
+    --bordas: red;
+    --textobotao: #fff;
+    --corbotao1: #6b0d0f;
+    --corbotao2: #4b0a0a;
+    --noinput: #ccc;
+  }
+
+body{
+    margin-top: 35px;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--letras);
+    font-size: 10px;
+    background-image: url(../_MEDIA/imagesvg.svg);
+    background-repeat: no-repeat;
+    background-size: 3000px; 
+    background-position: center; 
+    height: 100vh; 
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.upper {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    /* padding: 5px; */
+    /*background-color: white; /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="email"]
+{
+    width: 100%; /* Faz os inputs ocuparem toda a largura do container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding e a borda não extrapolem a largura */
+}
+/* Estilo dos labels */
+label {
+    display: flex; /* Faz o label ocupar toda a linha */
+    margin-bottom: 5px; /* Espaço entre o label e o input */
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: var(--letras);
+}
+input {
+    border: 2px solid var(--noinput);
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: var(--corbotao1); 
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--corbotao1); /* Cor de fundo inicial */
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    padding: 8px 18px; /* Espaçamento interno */
+    font-size: 12px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    display: flexbox;
+    margin: 45px 0px 0px 0x;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+.linha {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    margin-bottom: 6px; /* Espaçamento entre as linhas */
+    font-family: "Open Sans", sans-serif;
+}
+
+.linha label {
+    width: 150px; /* Define uma largura fixa para as labels */
+    margin-right: 0px; /* Espaçamento entre a label e o input */
+    text-align: right; /* Alinha o texto da label à direita */
+}
+footer {
+    margin-top: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}

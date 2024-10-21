@@ -1,0 +1,72 @@
+plano de aula
+Plano de aula
+TEMOS 11.5 horas.  objetivo final - fazer uma calculadora = **CALCMASTER**
+ 
+-- Todas as aulas tem que ter como base "CALCMASTER"
+
+-- Todos os exercícios tem que base na "CALCMASTER"
+
+-- Slides máximo 12 por tema/padronização.
+
+-- Atenção para o programa "EMBARCADEIRO"
+
+-- Níveis de Exercícios
+
+-- Pelo menos 1 monitor para cada 2 alunos.
+ 
+2x professores por sábado por sala trabalhando em DUPLA.
+ 
+ 
+* plano de aula para sábado 1:
+
+	- 1º hora/aula 45min = introdução a programação/lógica e algoritmos 
+
+	- 2º hora/aula 45min = introdução a programação/lógica e algoritmos
+
+	- 3º hora/aula 45min = estrutura de programação em c 
+
+	- 4º hora/aula 45min = estrutura de programação em c
+ 
+* plano de aula para sábado 2: 
+
+	- 1º hora/aula 45min = Operadores e Expressões
+
+	- 2º hora/aula 45min = Operadores e Expressões
+
+	- 3º hora/aula 45min = Estruturas Condicionais
+
+	- 4º hora/aula 45min = Estruturas Condicionais
+ 
+* plano de aula para sábado 3: 
+
+	- 1º hora/aula 45min = Estruturas Condicionais
+
+	- 2º hora/aula 45min = Estruturas Condicionais
+
+	- 3º hora/aula 45min = Estruturas de Repetição
+
+	- 4º hora/aula 45min = Estruturas de Repetição
+ 
+* plano de aula para sábado 4: 
+
+	- 1º hora/aula 30min = Revisão geral para produção da **CALCMASTER**
+
+	- 2º hora/aula fim = calculadora = **CALCMASTER** 
+
+	- 3º hora/aula fim = calculadora = **CALCMASTER**
+
+	- 4º hora/aula fim = calculadora = **CALCMASTER**
+ 
+ 
+*- Formato de cada Aula -*
+ 
+- Introdução (conceito) 
+
+- Slide ( exemplos e afins)
+
+- Explicação 
+
+- Tira dúvidas e revisão.
+
+- Pratica (exercício)
+ 

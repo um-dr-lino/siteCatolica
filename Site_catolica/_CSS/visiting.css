@@ -1,0 +1,209 @@
+:root {
+    --main-bg-color: brown;
+    --letras: black;
+    --background: #e0e1dd;
+    --background2: #f3f3f3;
+    --bordas: red;
+    --textobotao: #fff;
+    --corbotao1: #6b0d0f;
+    --corbotao2: #4b0a0a;
+    --noinput: #ccc;
+  }
+
+body{
+    margin-top: 35px;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--letras);
+    font-size: 10px;
+    background-image: url(../_MEDIA/imagesvg.svg);
+    background-repeat: no-repeat;
+    background-size: 3000px; 
+    background-position: center; 
+    height: 100vh; 
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--letras);
+}
+.titleSC{
+    margin-top: 40px;
+}
+.upper {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    /* padding: 5px; */
+    /*background-color: white; /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+}
+.form1 {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    padding: 10px;
+    /*background-color: white; /* Cor de fundo */
+    /*  border: 2px solid var(--corbotao1); Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+}
+        /* Estilo geral do formulário */
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+.linha {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    margin-bottom: 6px; /* Espaçamento entre as linhas */
+    font-family: "Open Sans", sans-serif;
+}
+
+.linha label {
+    width: 100px; /* Define uma largura fixa para as labels */
+    margin-right: 10px; /* Espaçamento entre a label e o input */
+    text-align: left; /* Alinha o texto da label à direita */
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+select
+{
+    width: 100%; /* Faz os inputs ocuparem toda a largura do container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding e a borda não extrapolem a largura */
+}
+
+/* Estilo dos labels */
+label {
+    display: flex; /* Faz o label ocupar toda a linha */
+    margin-bottom: 5px; /* Espaço entre o label e o input */
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid var(--noinput);
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: var(--corbotao1); 
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--corbotao1); /* Cor de fundo inicial */
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    padding: 8px 18px; /* Espaçamento interno */
+    font-size: 12px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    display: flexbox;
+    margin: 25px 0px 0px 0x;
+}
+
+.required::after {
+    content: '*';           /* Adiciona o asterisco */
+    color: red;             /* Cor vermelha para indicar obrigatoriedade */
+    margin-left: 5px;       /* Espaço entre o texto e o asterisco */
+    font-weight: bold;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
+}
+
+
+/* Parte de baixo */
+.label-text {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    font-size: 20px;
+    padding: 5px;
+    /*background-color: white; /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+}
+.salas {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    padding: 5px;
+    background-color: var(--background2); /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    text-align: left; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.salas p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.alteracao-dados {
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    right: 20px; /* Distância do canto direito */
+    top: 20px;   /* Distância do topo */
+    font-size: 12px;
+    color: #000; /* Cor do texto */
+    text-decoration: underline;
+    font-weight: bold;   
+}
+.botao-fixo {
+    position: fixed; /* Fica fixo na tela */
+    right: 20px; /* Distância da direita */
+    bottom: 20px; /* Distância da parte inferior */
+    background-color: var(--corbotao1); /* Cor de fundo inicial */
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 8px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao-fixo:hover {
+    background-color: var(--corbotao2); /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
