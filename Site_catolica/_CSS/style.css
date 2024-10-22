@@ -151,8 +151,8 @@ footer{
 
 #map-container {
     margin-top: 60px; /* Espaço acima do mapa */
-
 }
+
 
 /* Responsividade para o iframe */
 iframe {
@@ -160,6 +160,13 @@ iframe {
     max-width: 300px; /* Largura máxima */
     height: 300px; /* Altura do mapa */
     border: none; /* Remove a borda */
+    transition: transform 0.3s ease; /* Suaviza a transição */
+    margin: 15px;
+}
+
+iframe:hover{
+    transform: scale(1.2);
+
 }
 
 /* Estilos responsivos para telas menores */

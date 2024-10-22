@@ -1,0 +1,44 @@
+    <div id="headerad">
+        <ul>
+            <li onclick="toggleSublist('sublist1')">SOFTEXPERT - PROD
+                <ul id="sublist1" class="custom-list">
+                    <li>BU-000 - Corporate</li>
+                    <li>BU-001 - Softexpert Software</li>
+                        <ul>
+                            <li>1 - Executive Office</li>
+                            <ul>
+                                <li>1.1</li>
+                            </ul>
+                        </ul>
+                    <li>BU-002 - Softexpert Brazil</li>
+                    <li>BU-003 - Softexpert USA</li>
+                    <li>BU-004 - Softexpert Latam</li>
+                    <li>BU-005 - Softexpert Iberia</li>
+                    <li>BU-006 - Softexpert France</li>
+                    <li>BU-007 - Softexpert Italy</li>
+                    <li>BU-008 - Softexpert Germany</li>
+                    <li>BU-009 - Softexpert United Kingdom</li>
+                    <li>BU-010 - Softexpert Turkey</li>
+                    <li>BU-011 - Softexpert Oceania</li>
+                    <li>BU-012 - Softexpert Australia</li>
+                    <li>BU-013 - Softexpert Asia</li>
+                    <li>BU-014 - Softexpert Portugal</li>
+                    <li>BU-015 - Softexpert Colombia</li>
+                </ul>
+            </li>
+
+        </ul>   
+    </div>
+
+    .custom-list ul{
+    list-style-type: none; /* Remover os marcadores padrão */
+  }
+
+
+  .custom-list li {
+    list-style-type: none; /* Remover os marcadores padrão */
+    background-image: url("../_MEDIA/building.png");
+    background-size: 30px; /* Tamanho da imagem */
+    background-repeat: no-repeat;
+    background-position: left; /* Posição da imagem */
+  }

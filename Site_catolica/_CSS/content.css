@@ -1,0 +1,94 @@
+:root {
+    --main-bg-color: brown;
+    --letras: black;
+    --background: #e0e1dd;
+    --bordas: red;
+    --textobotao: #fff;
+    --corbotao1: #6b0d0f;
+    --corbotao2: #4b0a0a;
+  }
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 35px;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--letras);
+    font-size: 10px;
+    background-image: url(../_MEDIA/imagesvg.svg);
+    background-repeat: no-repeat;
+    background-size: 3000px; 
+    background-position: center; 
+    height: 100vh; 
+    scroll-behavior: smooth;
+    flex-direction: column;
+      min-height: 100vh; /* Garante que a página ocupe pelo menos a altura da tela */
+      margin: 0;
+
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
+}
+
+#headerad{
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: left;
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    font-size: 20px;
+    padding: 5px;
+    /*background-color: white; /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    margin: 10px 10px 10px 10px;
+    flex-direction: column;
+    margin: 0;
+    
+}
+li{
+    list-style: none;
+}
+ul:hover{
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+.custom-list, .nested-list {
+    display: none;
+}
+
+.custom-list, .nested-list {
+    display: none;
+}
+iframe {
+    width: 100%;
+    height: 900px; /* Altere o valor de altura conforme necessário */
+    border: none;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    #headerad{
+    font-size: 14px;
+    transition: 0.3s;
+    }
+}

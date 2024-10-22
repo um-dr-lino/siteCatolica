@@ -89,4 +89,36 @@ document.getElementById('cancel').addEventListener('click',function(){
     document.getElementById('form1').reset();
 });
 
+//Funçao do de responsividade do texto
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none"; // Fecha a caixa suspensa se estiver aberta
+    } else {
+        dropdown.style.display = "block"; // Abre a caixa suspensa
+    }
+}
+
+// function toggleSublist(sublistId) {
+//     var sublist = document.getElementById(sublistId);
+//     if (sublist.style.display === "none") {
+//         sublist.style.display = "block";
+//     } else {
+//         sublist.style.display = "none";
+//     }
+// }
+function toggleSublist(sublistId, event) {
+    var sublist = document.getElementById(sublistId);
+    if (sublist.style.display === "none" || sublist.style.display === "") {
+        sublist.style.display = "block";  // Exibe a sublista
+    } else {
+        sublist.style.display = "none";  // Oculta a sublista
+    }
+    
+    // Evita que o clique no item pai também feche a lista quando expandir o filho
+    if (event) {
+        event.stopPropagation();
+    }
+}
 
