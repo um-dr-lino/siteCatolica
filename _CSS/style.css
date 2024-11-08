@@ -1,0 +1,202 @@
+:root {
+    --main-bg-color: brown;
+    --letras: black;
+    --background: #e0e1dd;
+    --bordas: red;
+    --textobotao: #fff;
+    --corbotao1: #6b0d0f;
+    --corbotao2: #4b0a0a;
+  }
+
+body{
+    margin-top: 35px;
+    background-color: var(--background);
+    text-align: center;
+    color: var(--letras);
+    font-size: 10px;
+    background-image: url(../_MEDIA/imagesvg.svg);
+    background-repeat: no-repeat;
+    background-size: 3000px; 
+    background-position: center; 
+    height: 100vh; 
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: none;
+    width: 80px; /* Tamanho da imagem */
+    height: auto;
+    margin-right: 20px; /* Espaço entre a imagem e a caixa */
+    margin-left: 0; /* Garante que a imagem fique à esquerda */
+}
+
+.upper {
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    padding: 5px;
+    /*background-color: white; /* Cor de fundo */
+    border: 2px solid var(--corbotao1); /* Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 10px 10px 10px 10px;
+}
+
+.quite {
+    font-size: 20px;
+    width: auto;  /* Largura da caixa */
+    height: auto; /* Altura da caixa */
+    margin: 10px;
+    padding: 15px;
+    /*background-color: white; /* Cor de fundo */
+    /*border: 2px solid var(--bordas);  Borda opcional */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/*Fontes e letras*/
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
+}
+
+footer{
+    margin-top: 65px;
+}
+
+/* FOOTER */
+.siteoriginal{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    color:var(--letras);
+}
+/* Estilo do botão */
+.botao {
+    background-color: var(--corbotao1); /* Cor de fundo inicial */
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    border: none; /* Remove a borda padrão */
+    padding: 8px 18px; /* Espaçamento interno */
+    font-size: 12px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+.botao:hover {
+    background-color: var(--corbotao2); /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+}
+.botao-fixo {
+    position: fixed; /* Fica fixo na tela */
+    right: 20px; /* Distância da direita */
+    bottom: 20px; /* Distância da parte inferior */
+    background-color: var(--corbotao1); /* Cor de fundo inicial */
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 8px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao-fixo:hover {
+    background-color: var(--corbotao2); /* Cor de fundo ao passar o mouse */
+}
+
+/*IMAGENS */
+
+#popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fica fixo na tela */
+    top: 0; /* Alinhado ao topo */
+    left: 0; /* Alinhado à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+#popup img {
+    max-width: 80%; /* Limita a largura da imagem */
+    max-height: 80%; /* Limita a altura da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.close {
+    position: absolute; /* Posição absoluta em relação ao pop-up */
+    top: 20px; /* Alinhado ao topo */
+    right: 30px; /* Alinhado à direita */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+#map-container {
+    margin-top: 60px; /* Espaço acima do mapa */
+}
+
+
+/* Responsividade para o iframe */
+iframe {
+    width: 100%; /* Largura total do contêiner */
+    max-width: 300px; /* Largura máxima */
+    height: 300px; /* Altura do mapa */
+    border: none; /* Remove a borda */
+    transition: transform 0.3s ease; /* Suaviza a transição */
+    margin: 15px;
+}
+
+iframe:hover{
+    transform: scale(1.2);
+
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Aumenta o tamanho em telas menores */
+    }
+    h2 {
+        font-size: 1.25rem; /* Aumenta o tamanho em telas menores */
+    }
+    p {
+        font-size: 1rem; /* Aumenta o tamanho em telas menores */
+    }
+    .botao-fixo {
+        display: none;
+    }
+    .botao {
+        display: flex;
+        background-color: var(--corbotao1); /* Cor de fundo inicial */
+        margin: 5px 5px 5px 5px;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        color: #fff; /* Cor do texto */
+        font-weight: bold;
+        border: none; /* Remove a borda padrão */
+        padding: 8px 18px; /* Espaçamento interno */
+        font-size: 12px; /* Tamanho da fonte */
+        border-radius: 5px; /* Bordas arredondadas */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    }
+}

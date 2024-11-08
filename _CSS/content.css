@@ -1,0 +1,226 @@
+:root {
+    --main-bg-color: brown;
+    --letras: black;
+    --background: #f9fdf3;
+    --background2: #f0f3ea;
+    --bordas: red;
+    --textobotao: #fff;
+    --corbotao1: #6b0d0f;
+    --corbotao2: #4b0a0a;
+    margin: 0;
+    padding: 0;
+}
+.oxanium-unique-class-name {
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Escolha um valor de 200 a 800 conforme necessário */
+    font-style: normal;
+  }
+
+/* header{
+    background-image: url(../_MEDIA/bgimage.png);
+    background-repeat: no-repeat;
+    background-size: 400px; 
+    background-position: left;
+    margin: 0px; 
+} */
+
+#bgimage {
+    width: 130px;
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    transition: 0.3s;
+}
+
+body {
+    min-width: 470px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 35px;
+    background-color: var(--background);
+    background-image: url(../_MEDIA/matrix.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    /* background-position: center;  */
+    text-align: center;
+    color: var(--letras);
+    font-size: 10px;
+    height: 100vh;
+    scroll-behavior: smooth;
+    flex-direction: column;
+}
+
+.titleSC h1{
+    font-size: 24px;
+}
+
+.titleSC h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 6px;
+ }
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin-right: 120px;
+}
+
+#headerad {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+    width: auto;/* Largura da caixa */
+    height: auto;/* Altura da caixa */
+    margin: 10px 120px 0px 120px;
+    background-color: var(--background);
+    font-size: 20px;
+    padding: 5px;/*background-color: white; /* Cor de fundo */
+    border: 2.4px solid var(--corbotao1);/* Borda opcional */
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.torrehanoi {
+    width: 900px; /* Largura total da área pai ou você pode definir um valor fixo, como '600px' */
+    height: 400px; /* Altura da área do iframe */
+    border: none; /* Remove a borda do iframe */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+  }
+  .compilador {
+    overflow-y: hidden; /* Hide horizontal scrollbar */
+    width: 900px; /* Largura total da área pai ou você pode definir um valor fixo, como '600px' */
+    height: 400px; /* Altura da área do iframe */
+    border: none; /* Remove a borda do iframe */
+    margin-right: 1200px;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+  }
+
+  .fontcompilador{
+    padding: 30px;
+    font-size: 16px;
+    text-decoration: underline;
+    color: var(--letras);
+    font-weight: 600;
+  }
+
+  .fontslides{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    width: 1200px; /* Largura total da área pai ou você pode definir um valor fixo, como '600px' */
+    height: 600px; /* Altura da área do iframe */
+    border: none; /* Remove a borda do iframe */
+    /* TOP, RIGHT, BOTTOM, LEFT */
+    margin: 50px -100px 0px 0px;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+  }
+#headerad2 {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+    background-color: var(--background);
+    width: auto;/* Largura da caixa */
+    height: auto;/* Altura da caixa */
+    font-size: 20px;
+    padding: 5px;
+    border: 2.4px solid var(--corbotao1);/* Borda */
+    /* margin-top: 10px; */
+    margin: 10px 120px 0px 120px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#headerad2:hover,
+#headerad:hover {
+    background-color: var(--background2);
+    transition: 0.4s;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+/* li:hover{
+    list-style: url(../_MEDIA/maior2.png);
+
+} */
+
+ul:hover {
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+.custom-list,
+.nested-list {
+    display: none;
+}
+
+.slide{
+    align-items: center;
+}
+
+#torrehanoi{
+top: 60px;
+align-items: center;
+}
+
+iframe {
+    width: 100%;
+    height: 900px;
+    /* Altere o valor de altura conforme necessário */
+    border: none;
+    margin-right: 120px;
+}
+footer{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+
+    #headerad,
+    #headerad2 {
+        width: auto;/* Largura da caixa */
+        height: auto;/* Altura da caixa */
+        min-width: 470px;
+        font-size: 14px;
+        transition: 0.3s;
+        margin: 10 10 auto
+    }
+
+    #bgimage {
+        width: 80px;
+        /* position: absolute; */
+        top: 8px;
+        left: 0px;
+        transition: 0.3s;
+    }
+
+    .titleSC h1{
+        font-size: 16px;
+            white-space: nowrap; /* Permite a quebra de linha para telas menores */
+    }
+    
+    .titleSC h2{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .torrehanoi {
+    width: auto;
+    height: auto;
+    }
+
+}
